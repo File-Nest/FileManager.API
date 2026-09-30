@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="FileManager.API/FileManager.Web.csproj" />
+  <Project Path="FileManager.Data/FileManager.Data.csproj" />
+  <Project Path="FileManager.Model/FileManager.Model.csproj" />
+  <Project Path="FileManager.Service/FileManager.Service.csproj" />
+</Solution>
