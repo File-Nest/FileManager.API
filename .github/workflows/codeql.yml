@@ -22,19 +22,18 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: |
-            8.0.x
-            10.0.100
+          dotnet-version: '10.0.x'
+
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
           languages: csharp
 
       - name: Restore
-        run: dotnet restore FileManager.API.slnx
+        run: dotnet restore FileNest.API.slnx
 
       - name: Build
-        run: dotnet build FileManager.API.slnx --no-restore -c Release
+        run: dotnet build FileNest.API.slnx --no-restore -c Release
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
