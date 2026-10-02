@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "FileManager.Data": {
-      "commandName": "Project",
-      "workingDirectory": "C:\\Users\\Kedar\\source\\repos\\FileManager.API\\src\\FileManager.Web\\Controllers"
-    }
-  }
-}
