@@ -9,7 +9,7 @@ COPY . .
 RUN dotnet restore FileManager.API.slnx
 
 # Publish the Web project in Release mode
-RUN dotnet publish src/FileManager.API/FileManager.Web.csproj -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish src/FileManager.Web/FileManager.Web.csproj -c Release -o /app/publish /p:UseAppHost=false
 
 
 # Use the ASP.NET Core runtime to run the application
